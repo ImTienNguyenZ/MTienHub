@@ -1,7 +1,7 @@
 local httpService = game:GetService("HttpService")
 
 local InterfaceManager = {} do
-	InterfaceManager.Folder = "FluentMTienZ"
+	InterfaceManager.Folder = "FluentSettings"
     InterfaceManager.Settings = {
         Theme = "Blue",
         Acrylic = false,
@@ -102,7 +102,7 @@ local InterfaceManager = {} do
 			end
 		})
 	
---[[		local MenuKeybind = section:AddKeybind("MenuKeybind", { Title = "Minimize Bind", Default = Settings.MenuKeybind })
+		local MenuKeybind = section:AddKeybind("MenuKeybind", { Title = "Minimize Bind", Default = Settings.MenuKeybind })
 		MenuKeybind:OnChanged(function()
 			Settings.MenuKeybind = MenuKeybind.Value
             InterfaceManager:SaveSettings()
@@ -110,5 +110,5 @@ local InterfaceManager = {} do
 		Library.MinimizeKeybind = MenuKeybind
     end
 end
-]]
+
 return InterfaceManager
